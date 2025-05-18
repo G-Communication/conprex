@@ -16,12 +16,185 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@ProcessDoc" />
     <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    
+    <link rel="stylesheet" href="styles.css" />
+    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
+    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
   </head>
 
   <body>
-    <div id="root"></div>
-    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
-    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
-    <script type="module" src="/src/main.tsx"></script>
+    <div id="app">
+      <!-- Navigation -->
+      <nav class="navbar">
+        <div class="container">
+          <div class="navbar-content">
+            <a href="index.html" class="logo">ProcessDoc</a>
+            <!-- Desktop Navigation -->
+            <div class="nav-links desktop-nav">
+              <a href="how-it-works.html" class="nav-link">How it Works</a>
+              <a href="pricing.html" class="nav-link">Pricing</a>
+              <a href="dashboard.html" class="nav-btn btn-outline">Dashboard</a>
+              <a href="#" class="nav-btn btn-primary">Get Started</a>
+            </div>
+            <!-- Mobile menu button -->
+            <button class="mobile-menu-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg>
+            </button>
+          </div>
+          <!-- Mobile Navigation -->
+          <div class="mobile-nav">
+            <a href="how-it-works.html" class="mobile-nav-link">How it Works</a>
+            <a href="pricing.html" class="mobile-nav-link">Pricing</a>
+            <a href="dashboard.html" class="mobile-nav-link">Dashboard</a>
+            <a href="#" class="btn-primary mobile-btn">Get Started</a>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Main Content -->
+      <main>
+        <!-- Hero Section -->
+        <section class="hero">
+          <div class="container">
+            <h1 class="hero-title">Document Processes <span class="highlight">Automatically</span></h1>
+            <p class="hero-desc">
+              Create step-by-step guides and SOPs in seconds, not hours. 
+              Perfect for training, documentation, and knowledge sharing.
+            </p>
+            <div class="hero-buttons">
+              <a href="#" class="btn-primary btn-lg">Start Creating Guides</a>
+              <a href="how-it-works.html" class="btn-outline btn-lg">See How It Works</a>
+            </div>
+            <div class="hero-image">
+              <img src="/placeholder.svg" alt="ProcessDoc interface" class="img-showcase" />
+            </div>
+          </div>
+        </section>
+
+        <!-- Features -->
+        <section class="features">
+          <div class="container">
+            <h2 class="section-title">How ProcessDoc Works</h2>
+            
+            <div class="features-grid">
+              <div class="feature-card">
+                <div class="feature-icon">1</div>
+                <h3 class="feature-title">Record Your Process</h3>
+                <p class="feature-desc">Start the recorder and go through your process step by step - we'll capture everything automatically.</p>
+              </div>
+              
+              <div class="feature-card">
+                <div class="feature-icon">2</div>
+                <h3 class="feature-title">Edit & Customize</h3>
+                <p class="feature-desc">Add context, make adjustments, and personalize the guide to fit your organization's needs.</p>
+              </div>
+              
+              <div class="feature-card">
+                <div class="feature-icon">3</div>
+                <h3 class="feature-title">Share & Collaborate</h3>
+                <p class="feature-desc">Publish and share your guide with team members or embed it directly in your knowledge base.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="testimonials">
+          <div class="container">
+            <h2 class="section-title">Loved by Teams Everywhere</h2>
+            
+            <div class="testimonial-grid">
+              <div class="testimonial-card">
+                <p class="testimonial-text">"ProcessDoc has cut our documentation time by 80%. What used to take hours now takes minutes."</p>
+                <div class="testimonial-author">
+                  <div class="author-avatar"></div>
+                  <div class="author-info">
+                    <p class="author-name">Sarah Johnson</p>
+                    <p class="author-role">Training Manager</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="testimonial-card">
+                <p class="testimonial-text">"Our onboarding process is now seamless thanks to the easy-to-follow guides we created."</p>
+                <div class="testimonial-author">
+                  <div class="author-avatar"></div>
+                  <div class="author-info">
+                    <p class="author-name">Mark Thompson</p>
+                    <p class="author-role">HR Director</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="testimonial-card">
+                <p class="testimonial-text">"The ability to create visual guides instantly has transformed how we document our processes."</p>
+                <div class="testimonial-author">
+                  <div class="author-avatar"></div>
+                  <div class="author-info">
+                    <p class="author-name">Lisa Chen</p>
+                    <p class="author-role">Operations Lead</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <!-- CTA -->
+        <section class="cta">
+          <div class="container">
+            <h2 class="section-title">Ready to simplify your documentation?</h2>
+            <p class="cta-desc">
+              Join thousands of companies using ProcessDoc to create better process documentation in less time.
+            </p>
+            <a href="#" class="btn-primary btn-lg">Get Started for Free</a>
+          </div>
+        </section>
+      </main>
+      
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-grid">
+            <div class="footer-column">
+              <h3 class="footer-title">ProcessDoc</h3>
+              <p class="footer-desc">Making process documentation simple.</p>
+            </div>
+            <div class="footer-column">
+              <h4 class="footer-subtitle">Product</h4>
+              <ul class="footer-links">
+                <li><a href="how-it-works.html">How it Works</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="#">Templates</a></li>
+                <li><a href="#">Integrations</a></li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h4 class="footer-subtitle">Resources</h4>
+              <ul class="footer-links">
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Documentation</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Community</a></li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h4 class="footer-subtitle">Company</h4>
+              <ul class="footer-links">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Legal</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <p>© 2025 ProcessDoc. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
