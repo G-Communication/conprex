@@ -344,6 +344,8 @@ ul {
   color: var(--text-light);
 }
 
+
+
 /* Testimonials Section */
 .testimonials {
   background-color: var(--gray-50);
@@ -569,6 +571,73 @@ ul {
 }
 
 /* Pricing */
+ .pricing-table {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .plan {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+      width: 280px;
+      text-align: left;
+    }
+
+    .plan.popular {
+      background-color: #00aaff;
+      color: white;
+      position: relative;
+    }
+
+    .plan.popular::before {
+      content: "MOST POPULAR";
+      position: absolute;
+      top: -15px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #007acc;
+      color: white;
+      padding: 5px 10px;
+      border-radius: 12px;
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+    .plan h2 {
+      margin-top: 0;
+    }
+
+    .price {
+      font-size: 32px;
+      font-weight: bold;
+      margin: 20px 0 10px;
+    }
+
+    .features {
+      list-style: none;
+      padding: 0;
+    }
+
+    .features li {
+      margin: 10px 0;
+      padding-left: 20px;
+      position: relative;
+    }
+
+    .features li::before {
+      content: "✔";
+      position: absolute;
+      left: 0;
+      color: #00aa55;
+    }
+
+    .plan.popular .features li::before {
+      color: white;
+    }
 .billing-toggle {
   display: flex;
   align-items: center;
