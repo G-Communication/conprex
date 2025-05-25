@@ -764,6 +764,7 @@ input:checked + .toggle-slider:before {
   margin-bottom: 1rem;
 }
 .pricing p {
+  text-align: center;
   font-size: 1.1rem;
   color: #555;
   margin-bottom: 40px;
