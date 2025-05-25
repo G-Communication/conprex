@@ -758,10 +758,16 @@ input:checked + .toggle-slider:before {
 }
 
 .pricing-title {
+  text-align: center;
+  padding: 50px 20px;
   font-size: 1.5rem;
   margin-bottom: 1rem;
 }
-
+.pricing p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 40px;
+}
 .pricing-price {
   margin-bottom: 1.5rem;
 }
