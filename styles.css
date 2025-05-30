@@ -425,8 +425,8 @@ ul {
 
 /* Footer */
 .footer {
-  background-color: var(--gray-900);
-  color: var(--gray-400);
+  background: linear-gradient(120deg, #0000ff 0%, #4b0082 50%, #800080 100%);
+  color: var(--gray-100);
   padding: 4rem 0 2rem;
 }
 
