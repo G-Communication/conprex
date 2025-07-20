@@ -311,6 +311,7 @@ ul {
 .feature-offerings {
   padding: 5rem 0;
   background-color: red;
+  min-height: 500px;
 
 }
 
