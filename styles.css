@@ -310,7 +310,8 @@ ul {
 /* Features Section */
 .feature-offerings {
   padding: 5rem 0;
-  background-color: var(--gray-50);
+  background-color: red;
+  min-height: 500px;
 
 }
 
