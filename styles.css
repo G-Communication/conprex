@@ -222,7 +222,7 @@ ul {
 
 .hero {
   position: relative;
-  margin-bottom: 3rem;
+  margin-bottom: 0;
   background: linear-gradient(
     120deg,
     #0000ff 0%,
@@ -310,7 +310,7 @@ ul {
 /* Features Section */
 .feature-offerings {
   padding: 5rem 0;
-  background-color: red;
+  background-color: var(--gray-50);
   min-height: 500px;
 
 }
