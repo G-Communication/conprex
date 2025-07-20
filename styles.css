@@ -264,7 +264,9 @@ ul {
 .cta-buttons {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 25px; /* Adds space between flex children */
+  margin-top: 24px;
 }
 
 .cta-card {
