@@ -307,11 +307,10 @@ ul {
               0 0 12px rgba(255, 255, 255, 0.4);
 }
 
-}/* Features Section */
+/* Features Section */
 .feature-offerings {
   padding: 5rem 0;
-  background-color: red;
-  min-height: 500px;
+  background-color: var(--gray-50);
 
 }
 
