@@ -64,6 +64,15 @@ ul {
   padding: 0 1rem;
 }
 
+.container-offerings
+{
+  background: transparent;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
 /* Buttons */
 .btn-primary {
   display: inline-block;
