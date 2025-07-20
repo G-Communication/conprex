@@ -301,6 +301,7 @@ ul {
 }/* Features Section */
 .features {
   padding: 5rem 0;
+  background-color: var(--gray-50);
 }
 
 .section-title {
@@ -622,7 +623,6 @@ ul {
     .features {
       list-style: none;
       padding: 0;
-      background-color: var(--gray-50);
     }
 
     .features li {
