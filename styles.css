@@ -270,13 +270,15 @@ ul {
 .cta-card {
   background: #ffffff10;
   border: 2px solid #ffffff30;
-  border-radius: 16px;
-  padding: 2rem 2rem;
+  border-radius: 40px;
+  padding: 12px 24px;
+  font-weight: 600;
   color: #fff;
   text-align: center;
+  font-size: 16px;
+  letter-spacing: 0.5px;
   backdrop-filter: blur(8px);
-  width: 50px;
-  transition: all 0.3s ease;
+  display: inline-block;
   cursor: pointer;
 
   /*Transparent border glow effect */
