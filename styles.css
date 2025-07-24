@@ -607,6 +607,10 @@ ul {
       position: relative;
     }
 
+    .plan.popular p {
+      color: white;
+    }
+
     .plan.popular::before {
       content: "MOST POPULAR";
       position: absolute;
