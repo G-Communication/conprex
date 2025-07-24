@@ -780,7 +780,8 @@ input:checked + .toggle-slider:before {
   text-align: center;
   /*padding: 0 1.25rem;       /* Keep horizontal padding only */
   font-size: 1.25rem;
-  margin-bottom: 0;   /* ⬅️ Reduced to tighten spacing */
+  margin-bottom: 0;  /* ⬅️ Reduced to tighten spacing */
+  margin-bottom: 0.5rem;
 }
 .pricing p {
   text-align: center;
@@ -794,8 +795,8 @@ input:checked + .toggle-slider:before {
   font-size: 1.125rem;
   color: var(--text-light);
   line-height: 1.6;
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem; /* Give just enough space before cards start */
+  margin-top: 0;
+  margin-bottom: 2rem; /* Give just enough space before cards start */
 }
 }
 .pricing-price {
