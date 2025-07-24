@@ -789,6 +789,13 @@ input:checked + .toggle-slider:before {
   margin-bottom: 1rem;
   margin-top: 0;            /* ⬅️ Prevent extra spacing from default p */
 }
+.pricing-subtitle {
+  text-align: center;
+  font-size: 1.125rem;
+  color: var(--text-light);
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
 .pricing-price {
   margin-bottom: 1.5rem;
 }
