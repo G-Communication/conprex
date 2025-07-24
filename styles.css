@@ -793,8 +793,7 @@ input:checked + .toggle-slider:before {
   text-align: center;
   font-size: 1.125rem;
   color: var(--text-light);
-  margin-top: 0;
-  margin-bottom: 1rem;
+  margin: 0 auto 2rem;
 }
 .pricing-price {
   margin-bottom: 1.5rem;
