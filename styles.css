@@ -731,7 +731,7 @@ input:checked + .toggle-slider:before {
 }
 
 .pricing {
-  padding: 2rem 0;
+  padding: 5rem 0;
 }
 
 .pricing-grid {
