@@ -786,8 +786,8 @@ input:checked + .toggle-slider:before {
   text-align: center;
   font-size: 1.125rem;
   color: var(--text-light);
-  margin-bottom: 1rem;
-  margin-top: 0;            /* ⬅️ Prevent extra spacing from default p */
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;           /* ⬅️ Prevent extra spacing from default p */
 }
 .pricing-subtitle {
   text-align: center;
