@@ -780,8 +780,7 @@ input:checked + .toggle-slider:before {
   text-align: center;
   /*padding: 0 1.25rem;       /* Keep horizontal padding only */
   font-size: 1.25rem;
-  line-height: 1.3;
-  margin-bottom: 0.20rem;   /* ⬅️ Reduced to tighten spacing */
+  margin-bottom: 0;   /* ⬅️ Reduced to tighten spacing */
 }
 .pricing p {
   text-align: center;
