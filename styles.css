@@ -734,6 +734,10 @@ input:checked + .toggle-slider:before {
   padding: 5rem 0;
 }
 
+.pricing-table {
+    column-gap: 40px;
+}
+
 .pricing-grid {
   display: flex;
   flex-wrap: wrap;
