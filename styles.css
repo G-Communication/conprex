@@ -738,7 +738,7 @@ input:checked + .toggle-slider:before {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 2rem;
+  gap: 4rem;
   margin: 0 auto;
   max-width: 1000px;
 }
