@@ -157,13 +157,39 @@ ul {
   padding: 1rem 0;
 }
 
+/* --- Logo Shine Animation --- */
 .logo {
-  font-size: 1.5rem;
+  position: relative;
+  display: inline-block;
+  overflow: hidden; /* Needed so shine stays within logo */
 }
-.logo .accent {
-  color: #ea4c89;
-  font-weight: bold;
+
+/* Moving shine streak */
+.logo.shine::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -150%;
+  height: 100%;
+  width: 150%;
+  background: linear-gradient(
+      120deg,
+      transparent 0%,
+      rgba(255, 255, 255, 0.5) 50%,
+      transparent 100%
+  );
+  transform: skewX(-20deg);
+  animation: shineMove 2.8s infinite linear;
+  pointer-events: none;
 }
+
+/* Shine animation keyframes */
+@keyframes shineMove {
+  0% { left: -150%; }
+  50% { left: 150%; }
+  100% { left: 150%; }
+}
+
 
 .menu-icon {
   font-size: 1.5rem;
