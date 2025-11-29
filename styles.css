@@ -157,82 +157,57 @@ ul {
   padding: 1rem 0;
 }
 
-/* --- Logo Shine Animation --- */
-/* === GRADIENT LOGO + PREMIUM SHINE === */
+/* === GRADIENT LOGO TEXT === */
 .logo {
   font-size: 1.6rem;
   font-weight: 800;
   position: relative;
   display: inline-block;
-  overflow: hidden;
-
-  /* Gradient text theme */
-  background: linear-gradient(
-    120deg,
-    #0000ff 0%,
-    #4b0082 50%,
-    #800080 100%
-  );
+  background: linear-gradient(120deg, #0000ff, #4b0082, #800080);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 }
 
-/* Keep .ai gradient too */
-.logo .accent {
-  background: inherit;
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent !important;
-}
-
-/* Premium shine sweep */
-.logo.shine::before {
+/* ==== THICK FAST BORDER ILLUMINATION EFFECT ==== */
+.logo.shine::after {
   content: "";
   position: absolute;
-  top: -20%;
-  left: -250%;
-  width: 200%;
-  height: 160%;
-
-  /* Strong premium streak visible over gradient */
+  inset: -6px; /* border distance */
+  border-radius: 8px;
+  padding: 4px;
   background: linear-gradient(
-    115deg,
-    rgba(255, 255, 255, 0) 0%,
-    rgba(255, 255, 255, 0.8) 35%,
-    rgba(180, 200, 255, 0.95) 50%, 
-    rgba(255, 255, 255, 0.8) 65%,
-    rgba(255, 255, 255, 0) 100%
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.85),
+    rgba(160, 180, 255, 1),
+    rgba(255, 255, 255, 0.85),
+    transparent
   );
-
-  transform: skewX(-15deg);
-  filter: blur(10px);
-  animation: gradientShine 2.8s ease-out infinite;
-  pointer-events: none;
+  
+  filter: blur(14px);
   opacity: 0;
+  animation: borderGlowSweep 1.2s linear infinite;
+  pointer-events: none;
 }
 
-/* Shine animation */
-@keyframes gradientShine {
+@keyframes borderGlowSweep {
   0% {
-    left: -250%;
-    opacity: 0;
+    transform: translateX(-150%);
+    opacity: 0.3;
   }
-  20% {
+  30% {
     opacity: 1;
   }
   50% {
-    left: 250%;
+    transform: translateX(150%);
     opacity: 1;
   }
-  80% {
-    opacity: 0;
-  }
   100% {
-    left: 250%;
     opacity: 0;
   }
 }
+
 
 
 
