@@ -158,37 +158,82 @@ ul {
 }
 
 /* --- Logo Shine Animation --- */
+/* === GRADIENT LOGO + PREMIUM SHINE === */
 .logo {
+  font-size: 1.6rem;
+  font-weight: 800;
   position: relative;
   display: inline-block;
-  overflow: hidden; /* Needed so shine stays within logo */
+  overflow: hidden;
+
+  /* Gradient text theme */
+  background: linear-gradient(
+    120deg,
+    #0000ff 0%,
+    #4b0082 50%,
+    #800080 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
-/* Moving shine streak */
+/* Keep .ai gradient too */
+.logo .accent {
+  background: inherit;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent !important;
+}
+
+/* Premium shine sweep */
 .logo.shine::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: -150%;
-  height: 100%;
-  width: 150%;
+  top: -20%;
+  left: -250%;
+  width: 200%;
+  height: 160%;
+
+  /* Strong premium streak visible over gradient */
   background: linear-gradient(
-      120deg,
-      transparent 0%,
-      rgba(255, 255, 255, 0.5) 50%,
-      transparent 100%
+    115deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.8) 35%,
+    rgba(180, 200, 255, 0.95) 50%, 
+    rgba(255, 255, 255, 0.8) 65%,
+    rgba(255, 255, 255, 0) 100%
   );
-  transform: skewX(-20deg);
-  animation: shineMove 2.8s infinite linear;
+
+  transform: skewX(-15deg);
+  filter: blur(10px);
+  animation: gradientShine 2.8s ease-out infinite;
   pointer-events: none;
+  opacity: 0;
 }
 
-/* Shine animation keyframes */
-@keyframes shineMove {
-  0% { left: -150%; }
-  50% { left: 150%; }
-  100% { left: 150%; }
+/* Shine animation */
+@keyframes gradientShine {
+  0% {
+    left: -250%;
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  50% {
+    left: 250%;
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    left: 250%;
+    opacity: 0;
+  }
 }
+
 
 
 .menu-icon {
