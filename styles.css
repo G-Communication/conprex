@@ -169,47 +169,6 @@ ul {
   color: transparent;
 }
 
-/* ==== THICK FAST BORDER ILLUMINATION EFFECT ==== */
-.logo.shine::after {
-  content: "";
-  position: absolute;
-  inset: -6px; /* border distance */
-  border-radius: 8px;
-  padding: 4px;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    rgba(255, 255, 255, 0.85),
-    rgba(160, 180, 255, 1),
-    rgba(255, 255, 255, 0.85),
-    transparent
-  );
-  
-  filter: blur(14px);
-  opacity: 0;
-  animation: borderGlowSweep 1.2s linear infinite;
-  pointer-events: none;
-}
-
-@keyframes borderGlowSweep {
-  0% {
-    transform: translateX(-150%);
-    opacity: 0.3;
-  }
-  30% {
-    opacity: 1;
-  }
-  50% {
-    transform: translateX(150%);
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-
-
 
 .menu-icon {
   font-size: 1.5rem;
@@ -532,7 +491,7 @@ ul {
 .footer-bottom {
   text-align: center;
   padding-top: 2rem;
-  border-top: 1px solid var(--grey-800);
+  border-top: 1px solid var(--gray-800);
   font-size: 0.875rem;
 }
 
@@ -848,7 +807,7 @@ input:checked + .toggle-slider:before {
   margin-top: 0;
   margin-bottom: 2rem; /* Give just enough space before cards start */
 }
-}
+
 .pricing-price {
   margin-bottom: 1.5rem;
 }
