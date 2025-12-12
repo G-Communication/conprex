@@ -369,19 +369,26 @@ ul {
 .testimonials {
   background-color: var(--gray-50);
   padding: 5rem 0;
+  overflow: hidden;                  /* Needed so the sliding cards don’t overflow */
 }
 
 .testimonial-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  display: flex;                     /* Horizontal row instead of grid */
   gap: 2rem;
+  flex-wrap: nowrap;                 /* Keep them in one line */
+  will-change: transform;
+  animation: testimonials-loop 25s linear infinite;
 }
 
+/* Individual testimonial cards */
 .testimonial-card {
   background-color: var(--white);
   padding: 1.5rem;
   border-radius: var(--radius);
   box-shadow: var(--shadow);
+  min-width: 280px;                  /* Fixed-ish width for smooth scrolling */
+  max-width: 320px;
+  flex-shrink: 0;                    /* Don’t let them shrink */
 }
 
 .testimonial-text {
@@ -410,6 +417,26 @@ ul {
 .author-role {
   font-size: 0.875rem;
   color: var(--text-lighter);
+}
+
+/* Infinite horizontal loop animation */
+@keyframes testimonials-loop {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    /* Tune this depending on how many cards you have / if you duplicate them */
+    transform: translateX(-50%);
+  }
+}
+
+/* Optional: on smaller screens, stop the animation and stack them nicely */
+@media (max-width: 768px) {
+  .testimonial-grid {
+    animation: none;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 /* CTA Section */
